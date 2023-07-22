@@ -1,0 +1,855 @@
+/* Parametres par defaut de la page */
+body {
+	font-family:"Trebuchet MS","Times New Roman",Times,serif;
+	font-size:0.8em;
+	background-color:RGB(0,0,0);	
+	font-weight:normal;
+	font-style:normal;
+	font-color:RGB(255,0,0);
+	text-align:left;
+	color:RGB(255,0,0);
+}
+
+a, a:link, a:active, a:visited {
+	color:RGB(255,0,0);
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color:RGB(255,0,0);
+	text-decoration: underline;
+}
+
+/*****  conteneur de Profil/Evt/Clasement */
+#pjLinks {	
+	position:absolute;	
+	left:300px;
+	top: 100px;	
+	padding-left: 0;
+	vertical-align: middle;	
+	width : 300px;
+	
+	
+}
+
+ul#pjLinks li {			
+	list-style-type: none;
+	display: block;		
+	text-align:center;	
+	vertical-align: middle;	
+	display:inline;
+	padding-left:10px;
+	
+}
+
+ul#pjLinks li a{	
+	color: RGB(255,0,0);		
+	font-size: 10px;
+	text-decoration: none;	
+	font-weight: normal;
+}
+
+ul#pjLinks li#pjLinkProfil {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;	
+	padding-top:5px;	
+	margin-top: -15px;
+	z-index:10;
+}
+ul#pjLinks li#pjLinkProfil:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
+ul#pjLinks li#pjLinkEvents {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;	
+	margin-top: -15px;
+	z-index:10;
+}
+ul#pjLinks li#pjLinkEvents:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
+ul#pjLinks li#pjLinkTrolligion {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;
+	
+	margin-top: -15px;
+}
+ul#pjLinks li#pjLinkTrolligion:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
+ul#pjLinks li#pjLinkClassement {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;
+	
+	margin-top: -15px;
+}
+ul#pjLinks li#pjLinkClassement:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
+ul#pjLinks li#pjLinkMaison {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;
+	
+	margin-top: -15px;
+}
+ul#pjLinks li#pjLinkMaison:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
+/****** Bouton changer d'apparence */
+div#styleSwitcher {
+	position:absolute;
+	top:140px;
+	left:0px;	
+	width:200px;
+	height:35px;	
+	color:RGB(255,0,0);
+}
+
+div#styleSwitcher a{		
+	color:RGB(255,0,0);		
+	font-size: 12px;
+	text-decoration: none;
+	font-weight:normal;
+	
+}
+
+/****** Bouton envoyer un message */
+#envoiMessage {
+	visibility:hidden;	
+	position:absolute;
+	top:90px;
+	left:740px;	
+	width:220px;
+	height:35px;		
+	color:RGB(255,0,0);
+}
+
+
+#envoiMessage a{
+	visibility:hidden;	
+	color:RGB(255,0,0);		
+	font-size: 12px;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+
+/*****  Num du troll et bouton afficher */
+form#formView {
+	position:absolute;
+	left:0px;
+	top: 100px;	
+	color:RGB(0,0,0);
+	font-size: 12px;
+}
+
+form#formView div#IDPJ {
+	width:80px;
+	height:30px;
+}
+
+div#IDPJ label {
+	visibility:hidden;
+	font-size: 0px;
+	width:0px;
+	height:0px;
+}
+input#ai_IDPJ {
+	background-color:RGB(0,0,0);
+	color:RGB(255,0,0);
+	border:none; 	
+	width:75px;
+	height:22px;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:9px;
+	font-size: 12px;
+	margin-top:30px;
+}
+
+form#formView div.submit{
+	background-color:RGB(0,0,0);
+	width:80px;
+	height:30px;
+}
+div.submit input{
+	position:absolute;
+	left:100px;
+	top: 15px;	
+	background-color:RGB(0,0,0);
+	color:RGB(255,0,0);	
+	border:none; 	
+	width:80px;
+	height:30px;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:0px;
+	font-size: 12px;
+	margin-left:50px;
+	margin-top:-0px;
+}
+/***        ***/
+
+/*** Maison description **/
+dt.maison {
+	visibility:hidden;
+	font-size: 0px;
+	width:0px;
+	height:0px;
+}
+
+dd.maison {
+	visibility:hidden;
+	font-size: 0px;
+	width:0px;
+	height:0px;
+}
+
+/***** Conteneur du blason  */
+dt.blason  {
+	position:hidden;
+	visibility:center;
+	font-size: 0px;
+}
+dd.blason  {
+	position:absolute;
+	height:100%;
+	width:100%;	
+}
+dd.blason  img{
+	position:absolute;
+	visibility:center;
+top:0px;
+height:50%;
+	}
+
+dt.numero {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+
+dd.numero {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+
+dt.maladie {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;	
+}
+
+/** Distinctions **/
+dt.distinction {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;	
+}
+
+dt.distinction.palmares {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;	
+}
+
+dd.distinctionsHorsJeu {
+	visibility:hidden;
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:300px;
+	left:730px;
+	color:RGB(255,0,0);
+}
+
+dt.distinctions{
+	visibility:hidden;
+}
+
+dd.distinctions {	
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:220px;
+	left:0px;
+	color:RGB(255,0,0);
+}
+
+/* Héros de l'entropie */
+dd.distinction.tagsRP  ul li{
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:200px;
+	left:20px;
+	color:RGB(255,0,0);
+}
+
+/* Lutin de No'yel */
+dd.distinction.tagsRP  ul li+li{
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:220px;
+	left:20px;
+	color:RGB(255,0,0);
+}
+
+/* Glandeur */
+dd.distinction.palmares  ul li{
+	visibility:hidden;
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:200px;
+	left:20px;
+	color:RGB(255,0,0);
+}
+
+/** Maladie */
+dd.maladie {
+	visibility:hidden;
+	position:absolute;	
+	font-size: 12px;
+	font-weight:normal;
+	top:135px;
+	left:700px;
+	width : 250px;
+	color:RGB();
+}
+
+/** Trolligion */
+dt.trolligion {
+	visibility:hidden;
+}
+
+dd.trolligion {	
+	position:absolute;	
+	font-size: 10px;
+	width : 300px;
+	font-weight:bold;
+	top:550px;
+	left:-20px;
+	color:RGB(255,0,0);
+}
+
+/** Possessions **/
+dd.possessions {	
+	position:absolute;	
+	font-size: 12px;
+	font-weight:normal;
+	top:450px;
+	left:-300px;
+	color:RGB();
+	width : 300px;
+}
+
+dd.possessions a{		
+	color:RGB(255,0,0);		
+	font-size: 12px;
+	text-decoration: none;
+	font-weight:normal;
+	
+}
+
+dd.distinctionsHorsJeu ul {	
+	list-style-type: none;
+}
+
+dd.maladie ul {	
+	list-style-type: none;
+}
+
+dd.distinctions ul {	
+	list-style-type: none;
+}
+
+dd.trolligion ul {	
+	list-style-type: none;
+}
+
+dd.possessions ul {	
+	list-style-type: none;
+}
+
+
+
+dt.race {
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:300px;
+	left:78px;
+	color:RGB();
+}
+dd.race {
+	position:absolute;		
+	left:70px;
+	top: 300px;		
+	font-size: 10px;
+	font-weight:bold;
+	color:RGB();
+}
+
+dt.creation {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+dd.creation {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+
+dt.email {	
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+dd.email  {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;
+}
+
+dl#profil dt.niveau {
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:315px;
+	left:67px;
+	color:RGB();
+}
+dl#profil dd.niveau {
+	position:absolute;		
+	left:70px;
+	top: 315px;		
+	font-size: 10px;
+	font-weight:bold;
+	color:RGB();	
+}
+
+dt.guilde{
+	visibility:hidden;
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:370px;
+	left:70px;
+}
+
+dd.guilde#nomGuilde a{
+	position:absolute;		
+	left:110px;
+	top: 160px;		
+	font-size: 30px;
+	font-weight:bold;	
+	text-decoration: none;
+	color:RGB(255,0,0);
+}
+
+dd#rangGuilde {
+	visibility:hidden;
+	position:absolute;		
+	top:0px;
+	left:0px;
+	margin-left:0px;
+	margin-top:450px;
+	color:RGB(255,0,0);		
+	font-size: 16px;
+	font-weight:bold;
+	width:700px;
+	text-align:center;
+}
+
+dt.mouches {	
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:330px;
+	left:57px;
+	color:RGB();
+}
+dd.mouches {
+	position:absolute;		
+	left:70px;
+	top: 330px;		
+	font-size: 10px;
+	font-weight:bold;
+	color:RGB();
+}
+dt.meurtres {	
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:250px;
+	left:50px;
+	color:RGB();
+}
+
+dd.meurtres {
+	position:absolute;		
+	left:130px;
+	top: 250px;		
+	font-size: 10px;
+	font-weight:bold;
+	color:RGB();
+}
+
+dt.deces {	
+	position:absolute;	
+	font-size: 10px;
+	font-weight:bold;
+	top:265px;
+	left:50px;
+	color:RGB();
+}
+dd.deces {
+	position:absolute;		
+	left:130px;
+	top: 265px;		
+	font-size: 10px;
+	font-weight:bold;
+	color:RGB();
+}
+
+dd.equipement  {
+	position:absolute;		
+	left:0px;
+	top:200px;	
+}
+
+/* Anneau */
+dd.equipement  ul li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* armure */
+dd.equipement  ul li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* Cartable de scribe */
+dd.equipement  ul li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* casque */
+dd.equipement  ul li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* arme */
+dd.equipement  ul li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* Jambes */
+dd.equipement  ul li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* collier */
+dd.equipement  ul li+li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* Lance parcho */
+dd.equipement  ul li+li+li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* puce.png */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213167.png);
+}
+
+/* Prismeuh */
+dd.possessions  ul li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+top: 30px;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+/* prisme.gif */
+list-style-image:url(https://nsm09.casimages.com/img/2023/07/14//23071408170226576918213166.gif);
+}
+
+span.magie {
+color:RGB(255,0,0);
+font-style:bold;
+}
+
+p#disclaimer {
+	position:absolute;		
+	left:0px;
+	top:0px;
+	text-align:center;
+	visibility:hidden;
+}
+
+div#description {
+	position:relative;		
+	left:0px;
+	top:400px;
+	width:100%;
+}
+
+div#description span{	
+	position:relative;
+	float:left;		
+	width:400px;
+	margin-left:0px;
+	padding-top:0px;
+	margin-bottom:0px;	
+}
+
+
+
+/* Zones cachées */
+h1 {
+	text-align: center;
+	font-size: 1px;
+	font-family: serif;
+	background: url(https://nsm09.casimages.com/img/2023/07/14//23071408170426576918213174.gif) no-repeat scroll top left;
+	height : 220px;
+	width : 550px;
+	color: #05023B;
+	top :0;
+}
+h2 {
+	visibility:absolute;
+	font-size: 0px;
+}
+dt.blason  {
+	visibility:center;
+	font-size: 0px;
+}
+dt.distinctionsHorsJeu {
+	visibility:hidden;
+	font-size: 0px;
+}
+dd.distinctionsHorsJeu {
+	visibility:hidden;
+	font-size: 0px;
+}
+dt.numero {
+	visibility:hidden;
+	font-size: 0px;
+}
+
+dd.numero {
+	visibility:hidden;
+	font-size: 0px;
+}
+
+
+
+
+dt.creation {
+	visibility:hidden;
+	font-size: 0px;
+}
+dd.creation {
+	visibility:hidden;
+	font-size: 0px;
+}
+
+dt.email {	
+	visibility:hidden;
+	font-size: 0px;
+}
+dd.email  {
+	color:#FFFFFF;
+}
+
+dd.email:before  {
+	visibility:hidden;
+	font-size: 0px;
+}
+
+dt.equipement {	
+	visibility:hidden;
+	font-size: 0px;
+}
+
+dt.possessions {	
+	visibility:hidden;
+	font-size: 0px;
+}
+
+
+dt.distinctionsHorsJeu {
+	visibility:hidden;
+}
+dd.distinctionsHorsJeu {
+	visibility:hidden;
+}
+
+/* event page */
+body#PJView_Events form#formView {
+	visibility:hidden;
+	position:absolute;
+	left:420px;
+	top: 10px;	
+	color: RGB(48,53,58);	
+	
+}
+
+select#as_EventType {
+	background-color:RGB();
+	color:RGB(255,0,0);	
+	border:none;
+	width:110px;
+	height:20px;	
+	font-size:10px;
+	text-align:center;
+	
+}
+
+
+form#formEvents div.submit input{
+	background-color:RGB();
+	color:RGB(255,0,0);	
+	border:none; 	
+	width:80px;
+	height:30px;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:0px;
+	font-size: 10px;
+	margin-left:100px;
+	margin-top:-5px;
+
+}
