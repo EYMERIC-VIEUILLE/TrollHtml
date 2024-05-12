@@ -80,6 +80,21 @@ ul#pjLinks li#pjLinkEvents:hover {
 	background-repeat: no-repeat;
 }
 
+ul#pjLinks li#pjLinkTrolligion {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;
+	
+	margin-top: -15px;
+}
+ul#pjLinks li#pjLinkTrolligion:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
 ul#pjLinks li#pjLinkClassement {		
 	background-image:url(profil.png);
 	background-repeat: no-repeat;
@@ -95,11 +110,26 @@ ul#pjLinks li#pjLinkClassement:hover {
 	background-repeat: no-repeat;
 }
 
+ul#pjLinks li#pjLinkMaison {		
+	background-image:url(profil.png);
+	background-repeat: no-repeat;
+	width:80px;
+	height:30px;
+	vertical-align: middle;	
+	padding-top:5px;
+	
+	margin-top: -15px;
+}
+ul#pjLinks li#pjLinkMaison:hover {		
+	background-image:url(profil2.png);
+	background-repeat: no-repeat;
+}
+
 /****** Bouton changer d'apparence */
 div#styleSwitcher {
 	position:absolute;
-	top:120px;
-	left:20px;	
+	top:140px;
+	left:0px;	
 	width:200px;
 	height:35px;	
 	color:RGB(255,0,0);
@@ -172,7 +202,10 @@ form#formView div.submit{
 	width:80px;
 	height:30px;
 }
-div.submit input{	
+div.submit input{
+	position:absolute;
+	left:100px;
+	top: 15px;	
 	background-color:RGB(0,0,0);
 	color:RGB(255,0,0);	
 	border:none; 	
@@ -186,6 +219,21 @@ div.submit input{
 	margin-top:-0px;
 }
 /***        ***/
+
+/*** Maison description **/
+dt.maison {
+	visibility:hidden;
+	font-size: 0px;
+	width:0px;
+	height:0px;
+}
+
+dd.maison {
+	visibility:hidden;
+	font-size: 0px;
+	width:0px;
+	height:0px;
+}
 
 /***** Conteneur du blason  */
 dt.blason  {
@@ -229,6 +277,23 @@ dt.maladie {
 	left:0px;	
 }
 
+/** Distinctions **/
+dt.distinction {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;	
+}
+
+dt.distinction.palmares {
+	position:absolute;
+	visibility:hidden;
+	font-size: 0px;
+	top:0px;
+	left:0px;	
+}
+
 dd.distinctionsHorsJeu {
 	visibility:hidden;
 	position:absolute;	
@@ -252,7 +317,38 @@ dd.distinctions {
 	color:RGB(255,0,0);
 }
 
+/* Héros de l'entropie */
+dd.distinction.tagsRP  ul li{
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:200px;
+	left:20px;
+	color:RGB(255,0,0);
+}
 
+/* Lutin de No'yel */
+dd.distinction.tagsRP  ul li+li{
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:220px;
+	left:20px;
+	color:RGB(255,0,0);
+}
+
+/* Glandeur */
+dd.distinction.palmares  ul li{
+	visibility:hidden;
+	position:absolute;	
+	font-size: 11px;
+	font-weight:bold;
+	top:200px;
+	left:20px;
+	color:RGB(255,0,0);
+}
+
+/** Maladie */
 dd.maladie {
 	visibility:hidden;
 	position:absolute;	
@@ -264,6 +360,7 @@ dd.maladie {
 	color:RGB();
 }
 
+/** Trolligion */
 dt.trolligion {
 	visibility:hidden;
 }
@@ -278,12 +375,13 @@ dd.trolligion {
 	color:RGB(255,0,0);
 }
 
+/** Possessions **/
 dd.possessions {	
 	position:absolute;	
 	font-size: 12px;
 	font-weight:normal;
-	top:185px;
-	left:700px;
+	top:450px;
+	left:-300px;
 	color:RGB();
 	width : 300px;
 }
@@ -469,30 +567,16 @@ dd.deces {
 dd.equipement  {
 	position:absolute;		
 	left:0px;
-	top:250px;	
+	top:200px;	
 }
 
-/* Jambes */
+/* Anneau */
 dd.equipement  ul li{
 position:relative;
 color:RGB(255,0,0);
 font-weight:bold;
 text-align:center;
-left:150%;
-list-style:none;
-font-size:12px;
-width:300px;
-text-align:left;
-list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
-}
-
-/* arme */
-dd.equipement  ul li+li{
-position:relative;
-color:RGB(255,0,0);
-font-weight:bold;
-text-align:center;
-left:150%;
+left:140%;
 list-style:none;
 font-size:12px;
 width:300px;
@@ -501,12 +585,12 @@ list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
 }
 
 /* armure */
-dd.equipement  ul li+li+li{
+dd.equipement  ul li+li{
 position:relative;
 color:RGB(255,0,0);
 font-weight:bold;
 text-align:center;
-left:150%;
+left:140%;
 list-style:none;
 font-size:12px;
 width:300px;
@@ -514,13 +598,13 @@ text-align:left;
 list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
 }
 
-/* collier */
-dd.equipement  ul li+li+li+li{
+/* Cartable de scribe */
+dd.equipement  ul li+li+li{
 position:relative;
 color:RGB(255,0,0);
 font-weight:bold;
 text-align:center;
-left:150%;
+left:140%;
 list-style:none;
 font-size:12px;
 width:300px;
@@ -529,12 +613,68 @@ list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
 }
 
 /* casque */
+dd.equipement  ul li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
+}
+
+/* arme */
 dd.equipement  ul li+li+li+li+li{
 position:relative;
 color:RGB(255,0,0);
 font-weight:bold;
 text-align:center;
-left:150%;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
+}
+
+/* Jambes */
+dd.equipement  ul li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
+}
+
+/* collier */
+dd.equipement  ul li+li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
+list-style:none;
+font-size:12px;
+width:300px;
+text-align:left;
+list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
+}
+
+/* Lance parcho */
+dd.equipement  ul li+li+li+li+li+li+li+li{
+position:relative;
+color:RGB(255,0,0);
+font-weight:bold;
+text-align:center;
+left:140%;
 list-style:none;
 font-size:12px;
 width:300px;
@@ -543,7 +683,7 @@ list-style-image:url(https://eymeric-vieuille.github.io/TrollHtml/puce.png);
 }
 
 /* Prismeuh */
-dd.equipement  ul li+li+li+li+li+li{
+dd.possessions  ul li{
 position:relative;
 color:RGB(255,0,0);
 font-weight:bold;
